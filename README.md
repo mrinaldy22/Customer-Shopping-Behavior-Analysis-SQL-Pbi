@@ -67,8 +67,9 @@ The interactive Power BI dashboard visualizes the full scope of the analysis, fe
 ```Bash
 git clone [https://github.com/mrinaldy22/Customer-Shopping-Behavior-Analysis-SQL-Pbi.git](https://github.com/mrinaldy22/Customer-Shopping-Behavior-Analysis-SQL-Pbi.git)
 ```
-2. **Explore SQL Scripts: Check the SQL_Scripts/ folder to see the full data cleaning and transformation queries.**
-3. **View Dashboard: Open the .pbix file in the PowerBI/ folder (requires Power BI Desktop).**
+2. **Download Dataset:** Open .csv file in the Dataset/.
+3. **Explore SQL Scripts:** Check the SQL_Scripts/ folder to see the full data cleaning and transformation queries.
+4. **View Dashboard:** Open the .pbix file in the PowerBI/ folder (requires Power BI Desktop).
 
 **Author: Muhammad Rinaldy Rustam**
 
