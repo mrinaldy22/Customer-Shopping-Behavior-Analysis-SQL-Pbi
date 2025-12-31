@@ -65,7 +65,7 @@ The interactive Power BI dashboard visualizes the full scope of the analysis, fe
 🚀 How to Use This Project
 1. Clone the Repository:
 Bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git clone [[https://github.com/your-username/your-repo-name.git](https://github.com/mrinaldy22/Customer-Shopping-Behavior-Analysis-SQL-Pbi.git)]
 2. Explore SQL Scripts: Check the SQL_Scripts/ folder to see the full data cleaning and transformation queries.
 3. View Dashboard: Open the .pbix file in the PowerBI/ folder (requires Power BI Desktop).
 
