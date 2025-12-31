@@ -58,20 +58,21 @@ Recommendation: This extreme variance suggests a technical validation error in t
 
 📈 Dashboard Highlights
 The interactive Power BI dashboard visualizes the full scope of the analysis, featuring:
-- Anomaly Alert Visualization: A clear chart highlighting the discrepancy in promo usage between genders.
-- Demographic Analysis: Spending habits breakdown by Generation (Gen Z vs. Millennial).
-- Sales Performance: Overview of top-performing categories and regional trends.
+- **Anomaly Alert Visualization:** A clear chart highlighting the discrepancy in promo usage between genders.
+- **Demographic Analysis:** Spending habits breakdown by Generation (Gen Z vs. Millennial).
+- **Sales Performance:** Overview of top-performing categories and regional trends.
 
 🚀 How to Use This Project
-1. Clone the Repository:
-Bash
-git clone [[https://github.com/your-username/your-repo-name.git](https://github.com/mrinaldy22/Customer-Shopping-Behavior-Analysis-SQL-Pbi.git)]
-2. Explore SQL Scripts: Check the SQL_Scripts/ folder to see the full data cleaning and transformation queries.
-3. View Dashboard: Open the .pbix file in the PowerBI/ folder (requires Power BI Desktop).
+1. **Clone the Repository:**
+```Bash
+git clone [https://github.com/mrinaldy22/Customer-Shopping-Behavior-Analysis-SQL-Pbi.git](https://github.com/mrinaldy22/Customer-Shopping-Behavior-Analysis-SQL-Pbi.git)
+```
+2. **Explore SQL Scripts: Check the SQL_Scripts/ folder to see the full data cleaning and transformation queries.**
+3. **View Dashboard: Open the .pbix file in the PowerBI/ folder (requires Power BI Desktop).**
 
-Author: Muhammad Rinaldy Rustam
+**Author: Muhammad Rinaldy Rustam**
 
-Data Analyst Enthusiast | Information Systems Graduate
+**Data Analyst Enthusiast | Information Systems Graduate**
 
 
 
