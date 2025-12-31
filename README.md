@@ -33,3 +33,46 @@ set Generations = case
   WHEN Age BETWEEN 0 AND 12 THEN 'Gen Alpha'
   else 'Others'
 end;
+```
+
+🚨 Critical Insight: Operational Anomaly Detected
+During the exploratory data analysis (EDA), I uncovered a significant discrepancy in discount usage behavior that points to a potential System Bug.
+
+The Anomaly: Zero "Stacked Discount" for Females
+While analyzing the effectiveness of promotions, I found that 0% of Female customers were able to apply both a Discount and a Promo Code simultaneously. In contrast, 63.24% of Male customers successfully used both.
+<img width="506" height="193" alt="image" src="https://github.com/user-attachments/assets/ba528e51-57c2-49ed-b7c1-053d01776a3b" />
+
+🔎 SQL Investigation Code
+The following query was used to isolate and validate this anomaly:
+```sql
+SELECT 
+    Gender,
+    SUM(CASE WHEN Discount_Applied = 'Yes' AND Promo_Code_Used = 'Yes' THEN 1 ELSE 0 END) AS DoubleApplied,
+    COUNT(*) AS Jumlah,
+    CAST(SUM(CASE WHEN Discount_Applied = 'Yes' AND Promo_Code_Used = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(5,2)) AS Persentase
+FROM shopping_behavior
+GROUP BY Gender
+ORDER BY Persentase desc;
+```
+Recommendation: This extreme variance suggests a technical validation error in the checkout system for Female accounts. Immediate technical review is recommended to prevent revenue loss or customer dissatisfaction.
+
+📈 Dashboard Highlights
+The interactive Power BI dashboard visualizes the full scope of the analysis, featuring:
+- Anomaly Alert Visualization: A clear chart highlighting the discrepancy in promo usage between genders.
+- Demographic Analysis: Spending habits breakdown by Generation (Gen Z vs. Millennial).
+- Sales Performance: Overview of top-performing categories and regional trends.
+
+🚀 How to Use This Project
+1. Clone the Repository:
+Bash
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+2. Explore SQL Scripts: Check the SQL_Scripts/ folder to see the full data cleaning and transformation queries.
+3. View Dashboard: Open the .pbix file in the PowerBI/ folder (requires Power BI Desktop).
+
+Author: Muhammad Rinaldy Rustam
+
+Data Analyst Enthusiast | Information Systems Graduate
+
+
+
+
